@@ -32,8 +32,8 @@ export default class Graph {
         for (let i=0; i<this.#matrizAdyacencia.length;i++)
             list[i] = false
         
-        let [value] = entries[0]
-        queue.push(value)
+        let [key] = entries[0]
+        queue.push(key)
         
         while (queue.length > 0) {
             let val = queue.shift() //Sacamos el primer elemento de la cola
